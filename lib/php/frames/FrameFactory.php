@@ -76,6 +76,13 @@ class FrameFactory implements IFrameFactory {
 	}
 
 	/**
+	 * @return LogoutFrame
+	 */
+	public function createLogoutFrame() {
+		return new LogoutFrame($this->_nodeSocket);
+	}
+
+	/**
 	 * @return UserEvent
 	 */
 	public function createUserEventFrame() {
