@@ -27,7 +27,7 @@ class NodeSocketAssets extends AssetBundle
     public $js = [
     ];
     public $depends = [
-        '\YiiNodeSocket\Assets\SocketIOAssets'
+        'YiiNodeSocket\assets\SocketIOAssets'
     ];
 
     public function init()
