@@ -12,7 +12,9 @@ module.exports = {
     dbOptions : <?php echo json_encode($nodeSocket->getDb()->getConnectionOptions()); ?>,
     checkClientOrigin : <?php echo (int) $nodeSocket->checkClientOrigin; ?>,
     sessionVarName : '<?php echo $nodeSocket->sessionVarName; ?>',
-    socketLogFile : '<?php echo $nodeSocket->socketLogFile; ?>'
+    socketLogFile : '<?php echo $nodeSocket->socketLogFile; ?>',
+    certFile : '<?php echo $nodeSocket->certFile; ?>',
+    keyFile : '<?php echo $nodeSocket->keyFile; ?>'
 };
 
 <?php

@@ -1,11 +1,11 @@
 {
-    "name": "ratacibernetica/yii2-node-socket",
-    "description": "This is a fork of oncesk/yii-node-socket",
+    "name": "djbuch/yii2-node-socket",
+    "description": "This is a fork of ratacibernetica/yii-node-socket",
     "minimum-stability": "stable",
     "authors": [
 	{
-            "name": "Martin Roldan Araujo",
-            "email": "yo@ratacibernetica.com"
+            "name": "David-Julian Buch",
+            "email": "david@code-utopia.com"
         }
     ],
     "require": {

@@ -74,6 +74,20 @@ class NodeSocket extends Component {
     public $socketLogFile;
 
     /**
+     * Key file for the SSL certificate
+     *
+     * @var string
+     */
+    public $keyFile;
+
+    /**
+     * Cert file for the SSL certificate
+     *
+     * @var string
+     */
+    public $certFile;
+
+    /**
      * If set to false, any client can connect to websocket server
      *
      * @var bool
