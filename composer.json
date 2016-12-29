@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "oncesk/elephant.io": "v2.0.2"
+        "oncesk/elephant.io": "v2.0.3"
     },
     "autoload": {
         "psr-4": {
