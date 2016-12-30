@@ -1,6 +1,8 @@
 <?php
 namespace YiiNodeSocket\Frames;
 
+use ElephantIO\Engine\SocketIO\Version1X;
+
 abstract class AFrame implements \ArrayAccess {
 
 	const TYPE_EVENT = 'event';
@@ -179,12 +181,7 @@ abstract class AFrame implements \ArrayAccess {
 	 * @return \ElephantIO\Client
 	 */
 	protected function createClient() {
-		return new \ElephantIO\Client(
-			sprintf('https://%s:%s', $this->_nodeSocket->host, $this->_nodeSocket->port),
-			'socket.io',
-			1,
-			false
-		);
+		return new \ElephantIO\Client(new Version1X(sprintf('https://%s:%s', $this->_nodeSocket->host, $this->_nodeSocket->port)));
 	}
 
 	protected function init() {}
