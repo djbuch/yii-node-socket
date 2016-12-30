@@ -88,6 +88,13 @@ class NodeSocket extends Component {
     public $certFile;
 
     /**
+     * CA files for the SSL certificate (as an array) Node.js needs you to split the CA in parts
+     *
+     * @var array
+     */
+    public $caFiles;
+
+    /**
      * If set to false, any client can connect to websocket server
      *
      * @var bool

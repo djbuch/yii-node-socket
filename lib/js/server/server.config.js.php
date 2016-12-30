@@ -14,7 +14,8 @@ module.exports = {
     sessionVarName : '<?php echo $nodeSocket->sessionVarName; ?>',
     socketLogFile : '<?php echo $nodeSocket->socketLogFile; ?>',
     certFile : '<?php echo $nodeSocket->certFile; ?>',
-    keyFile : '<?php echo $nodeSocket->keyFile; ?>'
+    keyFile : '<?php echo $nodeSocket->keyFile; ?>',
+    caFiles : ['<?php echo implode("','", $nodeSocket->caFiles) ?>']
 };
 
 <?php
